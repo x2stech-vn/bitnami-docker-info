@@ -1,6 +1,7 @@
 {
   "name": "getcomponents-web",
   "version": "0.1.0",
+  "homepage": "https://ghp.x2stech.vn/bitnami-docker-info/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
