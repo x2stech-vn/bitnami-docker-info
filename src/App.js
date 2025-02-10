@@ -136,6 +136,22 @@ const App = () => {
 
   return (
     <div style={{ padding: '20px' }}>
+      <h1>Refs</h1>
+      <div>
+        <h3>Rolling tags</h3>
+        <p>https://techdocs.broadcom.com/us/en/vmware-tanzu/application-catalog/tanzu-application-catalog/services/tac-doc/apps-tutorials-understand-rolling-tags-containers-index.html</p>
+        <p>Bitnami uses rolling tags for its container images. To understand how this works, let’s look at the tags for the Bitnami WordPress container image:</p>
+        <pre class="pre codeblock vm-code-block prettyprint"><code>
+          latest, 6, 6-debian-12, 6.4.3
+        </code></pre>
+        <ul>
+        <li>The <em>latest</em> tag always points to the latest revision of the WordPress image.</li>
+        <li>The <em>6</em> tag is a rolling tag that always points to the latest revision of WordPress 6.y.z</li>
+        <li>The <em>6-debian-12</em> tag points to the latest revision of WordPress 6.y.z for Debian 12.</li>
+        <li>The <em>6.4.3</em> tag is a rolling tag that points to the latest revision of WordPress 6.4.3. It will be updated with different revisions or daily releases but only for WordPress 6.4.3.</li>
+        </ul>
+      </div>
+
       <h1>Fetch Docker Components</h1>
       <div style={{ marginBottom: '10px' }}>
         <Input
